@@ -55,5 +55,5 @@ Create a simple model with high training epochs. Check to GPU usage with:
 nvtop
 ```
 
-Special thanks to (this guide)[https://gist.github.com/denguir/b21aa66ae7fb1089655dd9de8351a202] which helped me a lot.
+Special thanks to [this guide](https://gist.github.com/denguir/b21aa66ae7fb1089655dd9de8351a202) which helped me a lot.
 If your issue persists, I highly recommend trying this.
