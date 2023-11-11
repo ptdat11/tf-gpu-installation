@@ -1,4 +1,4 @@
-# Installation guideline for NVIDIA GPU acceleration with Tensorflow
+# [Ubuntu 22.04] Installation guideline for NVIDIA GPU acceleration with Tensorflow
 #### Update & Upgrade
 ```
 sudo apt update; sudo apt upgrade
@@ -50,10 +50,20 @@ sudo apt install libcudnn8-samples
 ```
 
 #### Check if Tensorflow could utilize GPU
-Create a simple model with high training epochs. Check to GPU usage with:
+Create a simple model with high training epochs. Watch GPU usage with:
 ```
 nvtop
 ```
+
+WARNING: Do not run `sudo apt autoremove` or Tensorflow depedencies will be REMOVED and you have to do this all again. To fix this, run
+```
+sudo apt upgrade
+```
+Copy all the redundant packages by the OS. And
+```
+sudo apt install <redundant packages>
+```
+should tell apt to keep them in future autoremovals.
 
 Special thanks to [this guide](https://gist.github.com/denguir/b21aa66ae7fb1089655dd9de8351a202) which helped me a lot.
 If your issue persists, I highly recommend trying this.
