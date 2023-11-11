@@ -42,6 +42,14 @@ sudo apt install cuda
 
 #### Download cuDNN .deb file
 Download [here](https://developer.nvidia.com/rdp/cudnn-download). Choose the version which matches the one in top-right of `nvidia-smi` result.
+
+#### Install cuDNN
+```
+sudo apt install ./<filename.deb>
+sudo cp /var/cudnn-<something>.gpg /usr/share/keyrings/
+```
+
+#### Install cuDNN packages
 ```
 sudo apt update
 sudo apt install libcudnn8
